@@ -169,7 +169,7 @@
     transform: scale(1);
   }
 }
-.flip-x-in {
+.flip-in-x {
   transform: perspective(400px);
   transform-style: preserve-3d;
   animation-name: flip-x;
@@ -177,27 +177,13 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-.flip-x-in.slow {
+.flip-in-x.slow {
   animation-duration: 2s;
 }
-.flip-x-in.fast {
+.flip-in-x.fast {
   animation-duration: 0.5s;
 }
-.flip-x-out {
-  transform: perspective(400px);
-  transform-style: preserve-3d;
-  animation-name: flip-x;
-  animation-direction: reverse;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-.flip-x-out.slow {
-  animation-duration: 2s;
-}
-.flip-x-out.fast {
-  animation-duration: 0.5s;
-}
-.flip-y-in {
+.flip-in-y {
   transform: perspective(400px);
   transform-style: preserve-3d;
   animation-name: flip-y;
@@ -205,13 +191,27 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-.flip-y-in.slow {
+.flip-in-y.slow {
   animation-duration: 2s;
 }
-.flip-y-in.fast {
+.flip-in-y.fast {
   animation-duration: 0.5s;
 }
-.flip-y-out {
+.flip-out-x {
+  transform: perspective(400px);
+  transform-style: preserve-3d;
+  animation-name: flip-x;
+  animation-direction: reverse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.flip-out-x.slow {
+  animation-duration: 2s;
+}
+.flip-out-x.fast {
+  animation-duration: 0.5s;
+}
+.flip-out-y {
   transform: perspective(400px);
   transform-style: preserve-3d;
   animation-name: flip-y;
@@ -219,10 +219,10 @@
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-.flip-y-out.slow {
+.flip-out-y.slow {
   animation-duration: 2s;
 }
-.flip-y-out.fast {
+.flip-out-y.fast {
   animation-duration: 0.5s;
 }
 
