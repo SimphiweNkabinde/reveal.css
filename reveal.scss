@@ -140,22 +140,22 @@
 }
 
 .flip {
-    &-x {
-        &-in {
+    &-in {
+        &-x {
             @include animate-flip(flip-x, normal)
         }
 
-        &-out {
-            @include animate-flip(flip-x, reverse)
+        &-y {
+            @include animate-flip(flip-y, normal)
         }
     }
 
-    &-y {
-        &-in {
-            @include animate-flip(flip-y, normal)
+    &-out {
+        &-x {
+            @include animate-flip(flip-x, reverse)
         }
 
-        &-out {
+        &-y {
             @include animate-flip(flip-y, reverse)
         }
     }
